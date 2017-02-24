@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="game.knowledge.tsoglanakos.knowledgegame"
+ >
+
+<uses-sdk
+    android:minSdkVersion="10"
+    android:targetSdkVersion="10" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name" >
+    <activity
+        android:name=".MainActivity"
+        android:noHistory="true"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name="GameOver"
+        android:noHistory="true"
+        android:label="@string/title_activity_game_over" >
+    </activity>
+    <activity
+        android:name="Options"
+        android:noHistory="true"
+        android:label="@string/title_activity_options" >
+    </activity>
+    <activity
+        android:name="Win"
+        android:noHistory="true"
+        android:label="@string/title_activity_win" >
+    </activity>
+</application>
+
+</manifest>
